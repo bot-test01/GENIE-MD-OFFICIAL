@@ -21,6 +21,7 @@ let status =`
 ┝ 🥀 *Owner* :- HASHAN-𝐌𝐃* 
 ┝ 👾 *Version :- 1.0.0*
 └───────────────────◉▷`
+
 return reply(`${status}`)
 }catch(e){
 console.log(e)
