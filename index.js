@@ -19,12 +19,12 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94706042889']
+const ownerNumber = ['94752269410']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID
+const sessdata = config.SESSION_ID.replace("GENIE-MD~", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -69,25 +69,23 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `*✅ HASHAN-MD Bot Successfully Installed!*
+let up = `_*🙉 CONGRATULATIONS ${pushname} 🙉*_
 
-🔮 HASHAN-MD is built to revolutionize your WhatsApp experience smarter, faster, and more powerful.
+_🧞‍♂️^You Successfully Connected *GENIE-MD* Whatsapp Bot^🧞‍♂️_
 
-💡 From managing media, creating stunning images, automating tasks, to browsing the web everything you need is right here. Unlock a whole new world of features!
+*𝘠𝘰𝘶𝘵𝘶𝘣𝘦 𝘊𝘩𝘢𝘯𝘯𝘦𝘭* : https://www.youtube.com/@SmartTweak07
 
-⚠️ Disclaimer: We are not responsible for any bans or damages caused to your WhatsApp account. Use at your own discretion.
+*𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭 𝘔𝘰𝘷𝘪𝘦 𝘎𝘳𝘰𝘶𝘱* : https://chat.whatsapp.com/FvhNKzzYw3e6rTf02eqdMr
 
-> *🧑🏻‍💻 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥𝗦 :*
+╭──〔 🔗 *Information* 〕  
+├─ 🧩 *Prefix:* = ${prefix}
+├─ 📢 *Join Channel:*  
+│    https://whatsapp.com/channel/0029Vb699jD5q08ZvCPaAv2B  
+├─ 🌟 *Star the Repo:*  
+│    https://github.com/kushan-A-wichramasinghe/GENIE-MD-OFFICIAL  
+╰─🚀 *Powered by Kushan A Wickramasinghe*`;
 
-MAIN OWNER | HASHIYA TECH  
-
-> *🛡️ 𝗙𝗢𝗟𝗟𝗢𝗪 𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 :*
-
-https://whatsapp.com/channel/0029Vb3EOfAKGGGQAsl6wI47
-
-> *©️  𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 HASHAN-MD*`;
-
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://files.catbox.moe/sn20tl.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.postimg.cc/900HyS1X/20250608-175819.jpg` }, caption: up })
 
 }
 })
@@ -184,7 +182,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("hey, bot started✅");
+res.send("hey dear, bot started✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
