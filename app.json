@@ -1,22 +1,22 @@
 {
-  "name": "HASHAN-MD",
-  "description": "Javascript WhatsApp bot made by Hashiya coder",
-  "logo": "https://files.catbox.moe/sn20tl.jpg",
-  "keywords": ["HASHAN-MD"],
+  "name": "GENIE-MD",
+  "description": "Javascript WhatsApp bot made by KUSHAN A WICKARAMASINGHE",
+  "logo": "https://i.postimg.cc/900HyS1X/20250608-175819.jpg",
+  "keywords": ["GENIE-MD"],
   "success_url": "/",
 
     "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "SAFglSSJ#DXjkOgRifAqX6VzDqCFkond4oaZb5rudywVPKOlB_sU",
+      "description": "GENIE-MD~6RVV0IpL#NUC1z7LL9-lyCruF-fe6Q1uY6uAcXiNJImpDMwcd5g4",
       "required": true,
-      "value": "SAFglSSJ#DXjkOgRifAqX6VzDqCFkond4oaZb5rudywVPKOlB_sU"
+      "value": "GENIE-MD~6RVV0IpL#NUC1z7LL9-lyCruF-fe6Q1uY6uAcXiNJImpDMwcd5g4"
     },  
     
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "HASHAN-MD"
+      "value": "GENIE-MD|KUSHAN A WICKARAMASINGHE"
     }, 
       
     "PREFIX": {
@@ -79,27 +79,27 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS BY HASHAN-MD*"
+      "value": "*SEEN YOUR STATUS BY GENIE-MD*"
    
      }, 
     
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "Jᴀᴡᴀᴅ TᴇᴄʜX"
+      "value": "KUSHAN A WICKARAMASINGHE"
 }, 
 
     "OWNER_NUMBER": {
-      "description": "94706042889",
+      "description": "94752269410",
       "required": true,
-      "value": "94706042889"
+      "value": "94752269410"
 
     }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "HASHAN-MD"
+      "value": "GENIE-MD"
 
       }, 
 
@@ -132,13 +132,13 @@
     "MENU_IMAGE_URL": {
       "description": "add url for mention reply and menu if want.",
       "required": false,
-      "value": "https://files.catbox.moe/sn20tl.jpg"
+      "value": "https://i.postimg.cc/900HyS1X/20250608-175819.jpg"
     },
     
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*© POWERED BY HASHAN-MD*"
+      "value": "*© POWERED BY KUSHAN A WICKARAMASINGHE*"
     },
 
       "DELETE_LINKS": {
