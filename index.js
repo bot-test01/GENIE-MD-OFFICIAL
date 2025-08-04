@@ -32,7 +32,7 @@ if (!fs.existsSync(authDir)) {
     console.error('Please add your SESSION_ID env !!');
     process.exit(1);
   }
-  const sessdata = config.SESSION_ID;
+  const sessdata = config.SESSION_ID.replace("GENIE-MD~", '');
   const filer = File.fromString(authDir + sessdata);
   filer.read((err, buffer) => {
     if (err) throw err;
